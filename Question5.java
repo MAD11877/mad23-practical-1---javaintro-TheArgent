@@ -25,8 +25,35 @@ public class Question5
      *     2
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
-     
+
     Scanner in = new Scanner(System.in);
+    System.out.print("Input the number of integers you will be entering: ");
+    int integers = in.nextInt();
+    int[] nums = new int[integers];
+    for(int i=0;i<integers;i++){
+      System.out.print("Input your number: ");
+      int number = in.nextInt();
+      nums[i] = number;
+    }
+
+    int count = 0;
+    int frequent =0;
+
+    for(int i=0;i<integers;i++){
+      int tempcount = 0;
+      for(int j=i;j<(integers);j++){
+
+        if(nums[i]==nums[j]){
+          tempcount += 1;
+        }
+      }
+      if (tempcount > count){
+        count = tempcount;
+        frequent = nums[i];
+      }
+    }
+
+    System.out.println("The most frequent integer is " + frequent);
     
   }
 }

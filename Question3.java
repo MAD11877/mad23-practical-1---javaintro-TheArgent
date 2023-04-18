@@ -9,8 +9,13 @@ public class Question3
      * 
      * Hint: in.nextInt() to read integer
      */
-     
+
     Scanner in = new Scanner(System.in);
-    
+    while(true){
+      System.out.print("Insert integer: ");
+      int number = in.nextInt();
+      int itself = number * number;
+      System.out.println(String.format("Multiplied by itself is %d",itself));
+    }
   }
 }
