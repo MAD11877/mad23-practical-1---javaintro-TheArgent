@@ -13,11 +13,8 @@ public class Question2
     Scanner in = new Scanner(System.in);
     double height = in.nextDouble();
     double weight = in.nextDouble();
-    System.out.println(String.format("Height: %.2f m", height));
-    System.out.println(String.format("Weight: %.1f kg", weight));
-
     double bmi = weight/(height*height);
-    System.out.println(String.format("Your BMI is %.1f",bmi));
+    System.out.println(bmi);
 
   }
 }

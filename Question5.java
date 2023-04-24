@@ -27,11 +27,9 @@ public class Question5
      */
 
     Scanner in = new Scanner(System.in);
-    System.out.print("Input the number of integers you will be entering: ");
     int integers = in.nextInt();
     int[] nums = new int[integers];
     for(int i=0;i<integers;i++){
-      System.out.print("Input your number: ");
       int number = in.nextInt();
       nums[i] = number;
     }
@@ -53,7 +51,7 @@ public class Question5
       }
     }
 
-    System.out.println("The most frequent integer is " + frequent);
+    System.out.println(frequent);
     
   }
 }
