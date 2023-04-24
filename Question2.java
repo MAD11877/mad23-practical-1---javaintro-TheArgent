@@ -11,9 +11,7 @@ public class Question2
      */
 
     Scanner in = new Scanner(System.in);
-    System.out.print("Input your Height in m: ");
     double height = in.nextDouble();
-    System.out.print("Input your Weight in kg: ");
     double weight = in.nextDouble();
     System.out.println(String.format("Height: %.2f m", height));
     System.out.println(String.format("Weight: %.1f kg", weight));
