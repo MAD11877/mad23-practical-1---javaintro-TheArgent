@@ -18,6 +18,22 @@ public class Question4
      */
      
     Scanner in = new Scanner(System.in);
+    int stars = in.nextInt();
+    /* [version 1]while(stars != 0){
+      String s = "*";
+      System.out.println(s.repeat(stars));
+      stars -= 1;
+    } */
+
+    /* Version 2 */
+    int rows = stars;
+    for(int i=rows; i > 0; i--){
+      for(int j=0; j!=i; j++)
+      {
+        System.out.print("*");
+      }
+      System.out.println();
+    }
     
   }
 }
