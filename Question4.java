@@ -18,7 +18,6 @@ public class Question4
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.print("Insert the amount of stars: ");
     int stars = in.nextInt();
     /* [version 1]while(stars != 0){
       String s = "*";
